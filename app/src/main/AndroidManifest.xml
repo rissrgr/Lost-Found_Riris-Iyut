@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
+        android:maxSdkVersion="28"/>
 
     <application
         android:allowBackup="true"
@@ -15,13 +15,19 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.LostFounds"
+        android:theme="@style/Theme.LostAndFound"
         tools:targetApi="31">
         <activity
             android:name=".presentation.profile.ProfileManageActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.lostfound.LostFoundFavoriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.lostfound.LostFoundManageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.lostfound.LostFoundDetailActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.profile.ProfileActivity"
@@ -33,12 +39,6 @@
             android:name=".presentation.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.lostfound.LostFoundDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".presentation.lostfound.LostFoundManageActivity"
-            android:exported="false" />
-        <activity
             android:name=".presentation.main.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -47,10 +47,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

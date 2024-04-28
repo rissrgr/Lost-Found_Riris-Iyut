@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lost & Founds"
+rootProject.name = "LostAndFound"
 include(":app")
  
